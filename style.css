@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* ====== FONT  ====== */
+  font-size: 62.5%;
+  --font-main: 'Roboto', sans-serif;
+  /* ====== COLOR  ====== */
+  --fc-color-nav: #C4C4CC;
+  --fc-color-main: #E1E1E6;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-main);
+  background-color: aqua;
+}
+
+nav {
+  display: flex;
+  gap: 3.3rem;
+  align-items: center;
+  margin: 4rem 0rem 0rem 7rem
+}
+
+nav a {
+  text-decoration: none;
+}
