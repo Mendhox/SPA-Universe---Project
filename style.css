@@ -16,7 +16,22 @@
 body {
   font-size: 1.6rem;
   font-family: var(--font-main);
-  background-color: aqua;
+}
+
+body.home {
+  background: url(./assets/mountains-universe-1.png);
+}
+
+body.universe {
+  background: url(./assets/mountains-universe-02.png);
+}
+
+body.exploration {
+  background: url(./assets/mountains-universe-3.png);
+}
+
+body, .not-found-404 {
+  background: url(./assets/mountains-universe-1.png);
 }
 
 nav {
@@ -27,5 +42,53 @@ nav {
 }
 
 nav a {
+  color: var(--fc-color-nav);
+  font-size: 2.4rem;
+  font-weight: 700;
   text-decoration: none;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 21.2rem;
+}
+
+.page-content h1 {
+  color: var(--fc-color-main);
+  font-weight: 700;
+  font-size: 4.8rem;
+}
+
+
+
+p {
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: var(--fc-color-main);
+  margin-top: 2.4rem;
+  text-align: center;
+  width: 64.8rem;
+}
+
+.button {
+  background: transparent;
+  border: 2px solid var(--fc-color-main);
+  border-radius: .5rem;
+  color: var(--fc-color-main);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  margin-top: 2.4rem;
+  font-family: (--font-main);
+  padding: 1.2rem 3.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #FFFFFF;
+  color: #02799D;
 }

@@ -11,6 +11,15 @@ export class Router {
     window.history.pushState({}, '', event.target.href)
 
     this.handle()
+    this.addCurrentPageAsClassToBody()
+  }
+
+  addCurrentPageAsClassToBody() {
+    const { pathname } = location
+    const route = this.routes[pathname]
+    const [_, pages, file] = route.split('/')
+    const [className] = file.split('.')
+    document.body.setAttribute('class', className)
   }
 
   handle() {
